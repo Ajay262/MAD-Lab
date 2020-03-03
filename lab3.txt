@@ -211,21 +211,11 @@ public class MainActivity extends AppCompatActivity
             {
                 double n1 = Double.parseDouble(num1.getText().toString());
                 double n2 = Double.parseDouble(num2.getText().toString());
-                double sum1 = n1 + n2;
+                double sum1 = n1 / n2;
                 sum.setText(Double.toString(sum1));
             }
         });
 
-        add=(Button) findViewById(R.id.add);
-        add.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-                double n1 = Double.parseDouble(num1.getText().toString());
-                double n2 = Double.parseDouble(num2.getText().toString());
-                double sum1 = n1 + n2;
-                sum.setText(Double.toString(sum1));
-            }
-        });
+       
     }
 }
